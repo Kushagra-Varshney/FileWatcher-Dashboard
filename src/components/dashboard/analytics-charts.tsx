@@ -78,7 +78,7 @@ export function AnalyticsCharts({ analytics }: AnalyticsChartsProps) {
         </CardHeader>
         <CardContent>
           <ChartContainer config={dailyChartConfig} className="h-80 w-full">
-            <BarChart data={dailyData} width="100%">
+            <BarChart data={dailyData} width={600}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted))" />
               <XAxis 
                 dataKey="date" 
